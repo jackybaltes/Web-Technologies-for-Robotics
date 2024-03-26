@@ -1,0 +1,1024 @@
+<!doctype html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+
+        <title>Web Technologies for Robotics</title>
+
+        <link rel="stylesheet" href="css/reveal.css">
+        <link rel="stylesheet" href="css/theme/ntnuerc.css">
+
+        <!-- Theme used for syntax highlighting of code -->
+        <link rel="stylesheet" href="lib/css/zenburn.css">
+        <script src="https://daybrush.com/scenejs/release/latest/dist/scene.min.js"></script>
+		
+        <!-- Printing and PDF exports -->
+        <script>
+            var link = document.createElement( 'link' );
+            link.rel = 'stylesheet';
+            link.type = 'text/css';
+            link.href = window.location.search.match( /print-pdf/gi ) ? 'css/print/pdf.css' : 'css/print/paper.css';
+            document.getElementsByTagName( 'head' )[0].appendChild( link );
+        </script>
+        <script src="js/ntnu.js"></script>
+    </head>
+    <body>
+        <div class="reveal">
+        <div class="slides">
+            
+<section id="start" data-state="start">
+
+
+<!-- Header -->
+  
+
+<!-- Background -->
+
+
+<!-- Slide -->
+<div class="jb-slide">
+
+<div class="jb-output-code jb-render">
+
+<!-- start embedded style -->
+
+<!-- end embedded style -->
+<div class="jb-output jb-render">
+
+<h1>Web Technologies for Robotics</h1>
+<h2>An Opinionated Prediction</h2>
+
+<p>
+      Jacky Baltes<br>
+      National Taiwan Normal University<br>
+      Taipei, Taiwan<br>
+      <a href="mailto:jacky.baltes@ntnu.edu.tw">jacky.baltes@ntnu.edu.tw</a><br>
+</p>
+
+26 March 2024
+
+</div><!-- end of jb-output jb-render -->
+</div><!-- end of jb-output-code jb-render -->
+
+
+</div>
+<!-- Footer -->
+
+<div class="jb-footer-left plain">
+    <span id="id-1c2bca18-4259-411e-9346-e9e5194368ef" ><span id="id-1c2bca18-4259-411e-9346-e9e5194368ef"><img id="img-id-1c2bca18-4259-411e-9346-e9e5194368ef"     src="assets/images/logo.png"/></span>
+</span>
+
+</div>
+<div class="jb-footer-right plain">
+    <span id="id-f70e1cdd-b7ed-4f1a-9022-f3e1103b6275" ><span id="id-f70e1cdd-b7ed-4f1a-9022-f3e1103b6275"><img id="img-id-f70e1cdd-b7ed-4f1a-9022-f3e1103b6275" width="162" height="138"   src="assets/images/robbi.png"/></span>
+</span>
+
+</div>
+
+<aside class="notes">
+
+</aside>
+
+
+
+</section>
+<section id="slide_00003_frag_00001" data-state="slide_00003_frag_00001">
+
+
+<!-- Header -->
+  
+
+<!-- Background -->
+
+
+<!-- Slide -->
+<div class="jb-slide">
+
+<div class="jb-output-code jb-render">
+
+<!-- start embedded style -->
+
+<!-- end embedded style -->
+<div class="jb-output jb-render">
+
+<h1>Robot Operating System</h1>
+
+<div class="jb-text">
+<p>The <a href="https://www.ros.org">robot operating system ROS</a> has emerged as the most popular middleware for complex robots</p>
+<p>Advantages: parameters, logging, visualization, SLAM, moveit, ...</p>
+<p>Disadvantages: difficult to setup, regression during migration to ROS 2, lack of package updates</p>
+<p>Also: Lack of security, structural problems with <a href="https://www.gazebosim.org">Gazebo simulator</a></p>
+</div>
+
+</div><!-- end of jb-output jb-render -->
+</div><!-- end of jb-output-code jb-render -->
+
+
+</div>
+<!-- Footer -->
+
+<div class="jb-footer-left plain">
+    <span id="id-62329013-fcf5-4d23-bf1f-22adf87663ce" ><span id="id-62329013-fcf5-4d23-bf1f-22adf87663ce"><img id="img-id-62329013-fcf5-4d23-bf1f-22adf87663ce"     src="assets/images/logo.png"/></span>
+</span>
+
+</div>
+<div class="jb-footer-right plain">
+    <span id="id-eb89503c-53fc-4ec8-9e9d-f84f7a36d58a" ><span id="id-eb89503c-53fc-4ec8-9e9d-f84f7a36d58a"><img id="img-id-eb89503c-53fc-4ec8-9e9d-f84f7a36d58a" width="162" height="138"   src="assets/images/robbi.png"/></span>
+</span>
+
+</div>
+
+<aside class="notes">
+
+</aside>
+
+
+
+</section>
+<section id="slide_00004_frag_00001" data-state="slide_00004_frag_00001">
+
+
+<!-- Header -->
+  
+
+<!-- Background -->
+
+
+<!-- Slide -->
+<div class="jb-slide">
+
+<div class="jb-output-code jb-render">
+
+<!-- start embedded style -->
+
+<!-- end embedded style -->
+<div class="jb-output jb-render">
+
+<h1>Lack of Resources</h1>
+
+<div class="jb-text">
+<p>Maintaining a large open-source software project is hard work</p>
+<p>Most of these problems are solvable</p>
+<p>Lack of developers</p>
+<p>Lack of money</p>
+</div>
+
+</div><!-- end of jb-output jb-render -->
+</div><!-- end of jb-output-code jb-render -->
+
+
+</div>
+<!-- Footer -->
+
+<div class="jb-footer-left plain">
+    <span id="id-e915c85b-2eb7-4292-9f49-7f0008ecc7ff" ><span id="id-e915c85b-2eb7-4292-9f49-7f0008ecc7ff"><img id="img-id-e915c85b-2eb7-4292-9f49-7f0008ecc7ff"     src="assets/images/logo.png"/></span>
+</span>
+
+</div>
+<div class="jb-footer-right plain">
+    <span id="id-34c4dd7d-b090-4da8-bd8c-e6e498ceac79" ><span id="id-34c4dd7d-b090-4da8-bd8c-e6e498ceac79"><img id="img-id-34c4dd7d-b090-4da8-bd8c-e6e498ceac79" width="162" height="138"   src="assets/images/robbi.png"/></span>
+</span>
+
+</div>
+
+<aside class="notes">
+
+</aside>
+
+
+
+</section>
+<section id="slide_00005_frag_00001" data-state="slide_00005_frag_00001">
+
+
+<!-- Header -->
+  
+
+<!-- Background -->
+
+
+<!-- Slide -->
+<div class="jb-slide">
+
+<div class="jb-output-code jb-render">
+
+<!-- start embedded style -->
+
+<!-- end embedded style -->
+<div class="jb-output jb-render">
+
+<h1>Example: <a href="https://www.opencv.org">OpenCV</a></h1>
+
+<div class="jb-text">
+<p>Most popular library for computer vision</p>
+<p>Integral part of <a href="https://www.ros.org">ROS</a></p>
+<p>Planned major upgrade for version 5. <a href="https://opencv.org/blog/where-is-opencv-5/">Crowdfunding campaign</a> floundering (10,000 USD of $50,000 USD)</p>
+
+</div>
+
+</div><!-- end of jb-output jb-render -->
+</div><!-- end of jb-output-code jb-render -->
+
+
+</div>
+<!-- Footer -->
+
+<div class="jb-footer-left plain">
+    <span id="id-f78fb38f-5bba-465c-b4fe-3d61b5673c69" ><span id="id-f78fb38f-5bba-465c-b4fe-3d61b5673c69"><img id="img-id-f78fb38f-5bba-465c-b4fe-3d61b5673c69"     src="assets/images/logo.png"/></span>
+</span>
+
+</div>
+<div class="jb-footer-right plain">
+    <span id="id-2a5925d5-fba3-416c-8225-09f90c93cbf2" ><span id="id-2a5925d5-fba3-416c-8225-09f90c93cbf2"><img id="img-id-2a5925d5-fba3-416c-8225-09f90c93cbf2" width="162" height="138"   src="assets/images/robbi.png"/></span>
+</span>
+
+</div>
+
+<aside class="notes">
+
+</aside>
+
+
+
+</section>
+<section id="slide_00006_frag_00001" data-state="slide_00006_frag_00001">
+
+
+<!-- Header -->
+  
+
+<!-- Background -->
+
+
+<!-- Slide -->
+<div class="jb-slide">
+
+<div class="jb-output-code jb-render">
+
+<!-- start embedded style -->
+
+<!-- end embedded style -->
+<div class="jb-output jb-render">
+
+<h1>Specification</h1>
+
+<div class="jb-text">
+<p>Distributed processing system to isolate behaviors (Subsumption architecture, behavior trees)</p>
+<p>Nodes communicate data via publish and subscriptions (pubsub)</p>
+<p></p>
+</div>
+
+</div><!-- end of jb-output jb-render -->
+</div><!-- end of jb-output-code jb-render -->
+
+
+</div>
+<!-- Footer -->
+
+<div class="jb-footer-left plain">
+    <span id="id-c66dccd6-2f90-4d0e-91bf-420792522ce4" ><span id="id-c66dccd6-2f90-4d0e-91bf-420792522ce4"><img id="img-id-c66dccd6-2f90-4d0e-91bf-420792522ce4"     src="assets/images/logo.png"/></span>
+</span>
+
+</div>
+<div class="jb-footer-right plain">
+    <span id="id-8fe64370-cbb5-443d-a9ee-1bdbf55d6d48" ><span id="id-8fe64370-cbb5-443d-a9ee-1bdbf55d6d48"><img id="img-id-8fe64370-cbb5-443d-a9ee-1bdbf55d6d48" width="162" height="138"   src="assets/images/robbi.png"/></span>
+</span>
+
+</div>
+
+<aside class="notes">
+
+</aside>
+
+
+
+</section>
+<section id="slide_00007_frag_00001" data-state="slide_00007_frag_00001">
+
+
+<!-- Header -->
+  
+
+<!-- Background -->
+
+
+<!-- Slide -->
+<div class="jb-slide">
+
+<div class="jb-output-code jb-render">
+
+<!-- start embedded style -->
+
+<!-- end embedded style -->
+<div class="jb-output jb-render">
+
+<h1>Early World-wide Web</h1>
+
+<div class="jb-text">
+<p>The web is based on open standards</p>
+<p>Internet started based on <a href="https://developer.mozilla.org/en-US/docs/Web/HTML">Hypertext Markup Language (HTML)</a> 
+to describe content</p>
+<p><a href="https://developer.mozilla.org/en-US/docs/Web/CSS">Cascading Style Sheets (CSS)</a> to define formatting</p>
+<p><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript">Javascript</a> to define behavior</p>
+<p>Paradigm: powerful servers push data and some light processing to clients/browsers</p>
+
+</div>
+
+</div><!-- end of jb-output jb-render -->
+</div><!-- end of jb-output-code jb-render -->
+
+
+</div>
+<!-- Footer -->
+
+<div class="jb-footer-left plain">
+    <span id="id-80348d12-4251-4068-ba51-29eca98c7c29" ><span id="id-80348d12-4251-4068-ba51-29eca98c7c29"><img id="img-id-80348d12-4251-4068-ba51-29eca98c7c29"     src="assets/images/logo.png"/></span>
+</span>
+
+</div>
+<div class="jb-footer-right plain">
+    <span id="id-7038d4ee-033e-4589-a011-24b1e231042c" ><span id="id-7038d4ee-033e-4589-a011-24b1e231042c"><img id="img-id-7038d4ee-033e-4589-a011-24b1e231042c" width="162" height="138"   src="assets/images/robbi.png"/></span>
+</span>
+
+</div>
+
+<aside class="notes">
+
+</aside>
+
+
+
+</section>
+<section id="slide_00008_frag_00001" data-state="slide_00008_frag_00001">
+
+
+<!-- Header -->
+  
+
+<!-- Background -->
+
+
+<!-- Slide -->
+<div class="jb-slide">
+
+<div class="jb-output-code jb-render">
+
+<!-- start embedded style -->
+
+<!-- end embedded style -->
+<div class="jb-output jb-render">
+
+<h1>Modern Web Stack (cont.)</h1>
+
+<div class="jb-text">
+<p>Web is a distributed platform from the start</p>
+<p><a href="https://restfulapi.net/">Representational State Transfer (REST)</a> provides a architecture to orchestrate
+services (uniform interfaces, cacheable, client-server, stateless, layered system, code on demand)</p>
+<p>Security is a primary focus of web computation</p>
+</div>
+
+</div><!-- end of jb-output jb-render -->
+</div><!-- end of jb-output-code jb-render -->
+
+
+</div>
+<!-- Footer -->
+
+<div class="jb-footer-left plain">
+    <span id="id-e610ac9d-0358-4151-a66a-da535daf8f87" ><span id="id-e610ac9d-0358-4151-a66a-da535daf8f87"><img id="img-id-e610ac9d-0358-4151-a66a-da535daf8f87"     src="assets/images/logo.png"/></span>
+</span>
+
+</div>
+<div class="jb-footer-right plain">
+    <span id="id-5f043a35-e8d0-42f0-b9b7-cbdfda18dacf" ><span id="id-5f043a35-e8d0-42f0-b9b7-cbdfda18dacf"><img id="img-id-5f043a35-e8d0-42f0-b9b7-cbdfda18dacf" width="162" height="138"   src="assets/images/robbi.png"/></span>
+</span>
+
+</div>
+
+<aside class="notes">
+
+</aside>
+
+
+
+</section>
+<section id="slide_00009_frag_00001" data-state="slide_00009_frag_00001">
+
+
+<!-- Header -->
+  
+
+<!-- Background -->
+
+
+<!-- Slide -->
+<div class="jb-slide">
+
+<div class="jb-output-code jb-render">
+
+<!-- start embedded style -->
+
+<!-- end embedded style -->
+<div class="jb-output jb-render">
+
+<h1>Modern Web Stack</h1>
+
+<div class="jb-text">
+<p>Access to hardware in the client: camera, microphone, bluetooth, ...</p>
+<p><a href="https://webassembly.org/">Webassembly</a> is a stack based virtual machine for the javascript runtine. 
+Compile many languages to run in the browser (C++, python, rust, ...). At the moment lacks memory management, which will be
+included in the next standard</p>
+</div>
+
+</div><!-- end of jb-output jb-render -->
+</div><!-- end of jb-output-code jb-render -->
+
+
+</div>
+<!-- Footer -->
+
+<div class="jb-footer-left plain">
+    <span id="id-541b0254-3d70-447f-97df-4a2a14cced55" ><span id="id-541b0254-3d70-447f-97df-4a2a14cced55"><img id="img-id-541b0254-3d70-447f-97df-4a2a14cced55"     src="assets/images/logo.png"/></span>
+</span>
+
+</div>
+<div class="jb-footer-right plain">
+    <span id="id-be6ba7a7-ccdd-44ff-9f88-51824da0aa51" ><span id="id-be6ba7a7-ccdd-44ff-9f88-51824da0aa51"><img id="img-id-be6ba7a7-ccdd-44ff-9f88-51824da0aa51" width="162" height="138"   src="assets/images/robbi.png"/></span>
+</span>
+
+</div>
+
+<aside class="notes">
+
+</aside>
+
+
+
+</section>
+<section id="slide_00010_frag_00001" data-state="slide_00010_frag_00001">
+
+
+<!-- Header -->
+  
+
+<!-- Background -->
+
+
+<!-- Slide -->
+<div class="jb-slide">
+
+<div class="jb-output-code jb-render">
+
+<!-- start embedded style -->
+
+<!-- end embedded style -->
+<div class="jb-output jb-render">
+
+<h1>Modern Web Stack (cont.)</h1>
+
+<div class="jb-text">
+<p><a href="https://webglsamples.org/">WebGL</a> provides GPU accelerated graphics</p>
+<p><a href="https://developer.chrome.com/blog/webgpu-io2023/">WebGPU</a> provides advanced graphics and GPU-based computation</p>
+<p><a href="https://developer.mozilla.org/en-US/docs/Web/API/WebSockets_API">Websockets</a> allow app to create network connections</p>
+<p><a href="https://webrtc.org/">WebRTC</a> provides real-time communication between clients</p>
+</div>
+
+</div><!-- end of jb-output jb-render -->
+</div><!-- end of jb-output-code jb-render -->
+
+
+</div>
+<!-- Footer -->
+
+<div class="jb-footer-left plain">
+    <span id="id-7c99cfcd-1a91-4bc9-8794-7913cbe4f513" ><span id="id-7c99cfcd-1a91-4bc9-8794-7913cbe4f513"><img id="img-id-7c99cfcd-1a91-4bc9-8794-7913cbe4f513"     src="assets/images/logo.png"/></span>
+</span>
+
+</div>
+<div class="jb-footer-right plain">
+    <span id="id-8c95f5e4-c460-48dd-8ed6-65a71f1f01d6" ><span id="id-8c95f5e4-c460-48dd-8ed6-65a71f1f01d6"><img id="img-id-8c95f5e4-c460-48dd-8ed6-65a71f1f01d6" width="162" height="138"   src="assets/images/robbi.png"/></span>
+</span>
+
+</div>
+
+<aside class="notes">
+
+</aside>
+
+
+
+</section>
+<section id="slide_00011_frag_00001" data-state="slide_00011_frag_00001">
+
+
+<!-- Header -->
+  
+
+<!-- Background -->
+
+
+<!-- Slide -->
+<div class="jb-slide">
+
+<div class="jb-output-code jb-render">
+
+<!-- start embedded style -->
+
+<!-- end embedded style -->
+<div class="jb-output jb-render">
+
+<h1>Modern Web Stack (cont.)</h1>
+
+<div class="jb-text">
+<p>Modern browser has developed into a universal operating system</p>
+<p>Runs on anything that supports a modern browser: windows, mac os, linux, android, iOs, switch, ...</p>
+<p>Performs computation at almost native speed</p>
+<p>Client can do heavy lifting in computation</p>
+</div>
+
+</div><!-- end of jb-output jb-render -->
+</div><!-- end of jb-output-code jb-render -->
+
+
+</div>
+<!-- Footer -->
+
+<div class="jb-footer-left plain">
+    <span id="id-6d722386-3e02-4d61-84bf-2d8925688416" ><span id="id-6d722386-3e02-4d61-84bf-2d8925688416"><img id="img-id-6d722386-3e02-4d61-84bf-2d8925688416"     src="assets/images/logo.png"/></span>
+</span>
+
+</div>
+<div class="jb-footer-right plain">
+    <span id="id-b8fdd8a0-d5ce-4313-abe4-6ba709ac61c8" ><span id="id-b8fdd8a0-d5ce-4313-abe4-6ba709ac61c8"><img id="img-id-b8fdd8a0-d5ce-4313-abe4-6ba709ac61c8" width="162" height="138"   src="assets/images/robbi.png"/></span>
+</span>
+
+</div>
+
+<aside class="notes">
+
+</aside>
+
+
+
+</section>
+<section id="slide_00012_frag_00001" data-state="slide_00012_frag_00001">
+
+
+<!-- Header -->
+  
+
+<!-- Background -->
+
+
+<!-- Slide -->
+<div class="jb-slide">
+
+<div class="jb-output-code jb-render">
+
+<!-- start embedded style -->
+
+<!-- end embedded style -->
+<div class="jb-output jb-render">
+
+<h1>Resources</h1>
+
+<div class="jb-text">
+<p>Enourmous economic engine</p>
+<p>Thousands of developers at Google, Microsoft, Facebook work on improved javascript engine and other web
+technologies</p>
+<p>Lots of (open-source) projects to create better applications</p>
+</div>
+
+</div><!-- end of jb-output jb-render -->
+</div><!-- end of jb-output-code jb-render -->
+
+
+</div>
+<!-- Footer -->
+
+<div class="jb-footer-left plain">
+    <span id="id-1033adbe-b48d-4326-9ebc-9fff86838c7e" ><span id="id-1033adbe-b48d-4326-9ebc-9fff86838c7e"><img id="img-id-1033adbe-b48d-4326-9ebc-9fff86838c7e"     src="assets/images/logo.png"/></span>
+</span>
+
+</div>
+<div class="jb-footer-right plain">
+    <span id="id-05d836ea-5b76-499d-8dfc-4c663d1cfc80" ><span id="id-05d836ea-5b76-499d-8dfc-4c663d1cfc80"><img id="img-id-05d836ea-5b76-499d-8dfc-4c663d1cfc80" width="162" height="138"   src="assets/images/robbi.png"/></span>
+</span>
+
+</div>
+
+<aside class="notes">
+
+</aside>
+
+
+
+</section>
+<section id="slide_00013_frag_00001" data-state="slide_00013_frag_00001">
+
+
+<!-- Header -->
+  
+
+<!-- Background -->
+
+
+<!-- Slide -->
+<div class="jb-slide">
+
+<div class="jb-output-code jb-render">
+
+<!-- start embedded style -->
+
+<!-- end embedded style -->
+<div class="jb-output jb-render">
+
+<h1>Issues and Concerns</h1>
+
+<div class="jb-text">
+<p>Companies are trying to influence the web standards (e.g., Google DRM proposal)</p>
+<p>A new framework every week: cgi, jquery, ..., angular, react, vue, svelte, nextjs, ...</p>
+<p></p>
+
+<p></p>
+</div>
+
+</div><!-- end of jb-output jb-render -->
+</div><!-- end of jb-output-code jb-render -->
+
+
+</div>
+<!-- Footer -->
+
+<div class="jb-footer-left plain">
+    <span id="id-637c46af-53c6-437d-bf27-9b6beebc089f" ><span id="id-637c46af-53c6-437d-bf27-9b6beebc089f"><img id="img-id-637c46af-53c6-437d-bf27-9b6beebc089f"     src="assets/images/logo.png"/></span>
+</span>
+
+</div>
+<div class="jb-footer-right plain">
+    <span id="id-c3ad04a4-ce4b-4037-8024-ca828dc3ef75" ><span id="id-c3ad04a4-ce4b-4037-8024-ca828dc3ef75"><img id="img-id-c3ad04a4-ce4b-4037-8024-ca828dc3ef75" width="162" height="138"   src="assets/images/robbi.png"/></span>
+</span>
+
+</div>
+
+<aside class="notes">
+
+</aside>
+
+
+
+</section>
+<section id="slide_00014_frag_00001" data-state="slide_00014_frag_00001">
+
+
+<!-- Header -->
+  
+
+<!-- Background -->
+
+
+<!-- Slide -->
+<div class="jb-slide">
+
+<div class="jb-output-code jb-render">
+
+<!-- start embedded style -->
+
+<!-- end embedded style -->
+<div class="jb-output jb-render">
+
+<h1>Let's Move</h1>
+
+<div class="jb-text">
+<p>Uses camera to track body pose using <a href="https://arxiv.org/abs/1804.04875">BodyNet</a></p>
+<p>Let's Move</a></p>
+<p>Processing is done completely in the <b>browser</b></p>
+<p>Neural network is implemented using <a href="https://www.tensorflow.org">Tensorflow</a></p>
+<p>No installation required</p>
+</div>
+
+</div><!-- end of jb-output jb-render -->
+</div><!-- end of jb-output-code jb-render -->
+
+
+</div>
+<!-- Footer -->
+
+<div class="jb-footer-left plain">
+    <span id="id-acf9cce9-1789-4006-85d2-6b5f691eeb0e" ><span id="id-acf9cce9-1789-4006-85d2-6b5f691eeb0e"><img id="img-id-acf9cce9-1789-4006-85d2-6b5f691eeb0e"     src="assets/images/logo.png"/></span>
+</span>
+
+</div>
+<div class="jb-footer-right plain">
+    <span id="id-512dabfa-68a2-4ab2-9726-37679509c2d1" ><span id="id-512dabfa-68a2-4ab2-9726-37679509c2d1"><img id="img-id-512dabfa-68a2-4ab2-9726-37679509c2d1" width="162" height="138"   src="assets/images/robbi.png"/></span>
+</span>
+
+</div>
+
+<aside class="notes">
+
+</aside>
+
+
+
+</section>
+<section id="slide_00015_frag_00001" data-state="slide_00015_frag_00001">
+
+
+<!-- Header -->
+  
+
+<!-- Background -->
+
+
+<!-- Slide -->
+<div class="jb-slide">
+
+<div class="jb-output-code jb-render">
+
+<!-- start embedded style -->
+
+<!-- end embedded style -->
+<div class="jb-output jb-render">
+
+<h1>Humanoid Gogoro Scooter Simulator</h1>
+
+<div class="jb-text">
+<p><a href="https://jackybaltes.github.io/scooter_sim" target="_blank" rel="noopener noreferrer">Humanoid Gogoro Scooter</a> is a
+simulation of our humanoid robot on a Gogoro Scooter</p>
+<p>Pass the driving test for scooters in Taiwan</p>
+<p>Simplified dynamics to create a game</p>
+<p>Added a Taiwanese bear to make it more interesting</p>
+</div>
+
+</div><!-- end of jb-output jb-render -->
+</div><!-- end of jb-output-code jb-render -->
+
+
+</div>
+<!-- Footer -->
+
+<div class="jb-footer-left plain">
+    <span id="id-e77d25bc-dc7a-4c3f-a7c1-84fa61b247e8" ><span id="id-e77d25bc-dc7a-4c3f-a7c1-84fa61b247e8"><img id="img-id-e77d25bc-dc7a-4c3f-a7c1-84fa61b247e8"     src="assets/images/logo.png"/></span>
+</span>
+
+</div>
+<div class="jb-footer-right plain">
+    <span id="id-9664bd87-3880-45e1-a0aa-fe36d40a0be5" ><span id="id-9664bd87-3880-45e1-a0aa-fe36d40a0be5"><img id="img-id-9664bd87-3880-45e1-a0aa-fe36d40a0be5" width="162" height="138"   src="assets/images/robbi.png"/></span>
+</span>
+
+</div>
+
+<aside class="notes">
+
+</aside>
+
+
+
+</section>
+<section id="slide_00016_frag_00001" data-state="slide_00016_frag_00001">
+
+
+<!-- Header -->
+  
+
+<!-- Background -->
+
+
+<!-- Slide -->
+<div class="jb-slide">
+
+<div class="jb-output-code jb-render">
+
+<!-- start embedded style -->
+
+<!-- end embedded style -->
+<div class="jb-output jb-render">
+
+<h1>Humanoid Robot Controller</h1>
+
+<div class="jb-text">
+<p>Implemented a controller for our new tiny humanoid robot</p>
+<p>Animation done using <a href="https://www.theatrejs.com/">Theatre js</a></p>
+<p>Stores configurations, animations, etc. in local storage</p>
+</div>
+
+</div><!-- end of jb-output jb-render -->
+</div><!-- end of jb-output-code jb-render -->
+
+
+</div>
+<!-- Footer -->
+
+<div class="jb-footer-left plain">
+    <span id="id-df7cadf6-ac0f-45bc-9322-f1e773206bf7" ><span id="id-df7cadf6-ac0f-45bc-9322-f1e773206bf7"><img id="img-id-df7cadf6-ac0f-45bc-9322-f1e773206bf7"     src="assets/images/logo.png"/></span>
+</span>
+
+</div>
+<div class="jb-footer-right plain">
+    <span id="id-0a82ab06-59c3-4a5f-8f4f-2c3fd520fdf6" ><span id="id-0a82ab06-59c3-4a5f-8f4f-2c3fd520fdf6"><img id="img-id-0a82ab06-59c3-4a5f-8f4f-2c3fd520fdf6" width="162" height="138"   src="assets/images/robbi.png"/></span>
+</span>
+
+</div>
+
+<aside class="notes">
+
+</aside>
+
+
+
+</section>
+<section id="slide_00017_frag_00001" data-state="slide_00017_frag_00001">
+
+
+<!-- Header -->
+  
+
+<!-- Background -->
+
+
+<!-- Slide -->
+<div class="jb-slide">
+
+<div class="jb-output-code jb-render">
+
+<!-- start embedded style -->
+
+<!-- end embedded style -->
+<div class="jb-output jb-render">
+
+<h1>Large Language Models</h1>
+
+<div class="jb-text">
+<p>Large language models are some of the most demanding applications at the moment (7 GB memory, GPU required)</p>
+<p>Complex dependencies on pytorch, cuda, ...</p>
+<p><a href="https://github.com/mlc-ai/web-llm">Web-LLM</a> runs a large language model entirely in the browser. 
+<a href="https://webllm.mlc.ai/" target="_blank" rel="noopener noreferrer">Demo</a></p>
+</div>
+
+</div><!-- end of jb-output jb-render -->
+</div><!-- end of jb-output-code jb-render -->
+
+
+</div>
+<!-- Footer -->
+
+<div class="jb-footer-left plain">
+    <span id="id-d7ad40ac-fc13-4692-90ac-a1679674515b" ><span id="id-d7ad40ac-fc13-4692-90ac-a1679674515b"><img id="img-id-d7ad40ac-fc13-4692-90ac-a1679674515b"     src="assets/images/logo.png"/></span>
+</span>
+
+</div>
+<div class="jb-footer-right plain">
+    <span id="id-3f8f42ab-f907-4c73-88c2-79ae443c777a" ><span id="id-3f8f42ab-f907-4c73-88c2-79ae443c777a"><img id="img-id-3f8f42ab-f907-4c73-88c2-79ae443c777a" width="162" height="138"   src="assets/images/robbi.png"/></span>
+</span>
+
+</div>
+
+<aside class="notes">
+
+</aside>
+
+
+
+</section>
+<section id="slide_00018_frag_00001" data-state="slide_00018_frag_00001">
+
+
+<!-- Header -->
+  
+
+<!-- Background -->
+
+
+<!-- Slide -->
+<div class="jb-slide">
+
+<div class="jb-output-code jb-render">
+
+<!-- start embedded style -->
+
+<!-- end embedded style -->
+<div class="jb-output jb-render">
+
+<h1>Conclusions</h1>
+
+<div class="jb-text">
+<p>NTNU ERC increasingly uses web technologies. Future proof our work</p>
+<p>FIRA: Humanoid robot simulator for rock climbing</p>
+</div>
+
+</div><!-- end of jb-output jb-render -->
+</div><!-- end of jb-output-code jb-render -->
+
+
+</div>
+<!-- Footer -->
+
+<div class="jb-footer-left plain">
+    <span id="id-9f399814-4673-4f75-b372-8f5d327204f2" ><span id="id-9f399814-4673-4f75-b372-8f5d327204f2"><img id="img-id-9f399814-4673-4f75-b372-8f5d327204f2"     src="assets/images/logo.png"/></span>
+</span>
+
+</div>
+<div class="jb-footer-right plain">
+    <span id="id-e6c46ced-8277-4eab-a6e5-816bc5519c05" ><span id="id-e6c46ced-8277-4eab-a6e5-816bc5519c05"><img id="img-id-e6c46ced-8277-4eab-a6e5-816bc5519c05" width="162" height="138"   src="assets/images/robbi.png"/></span>
+</span>
+
+</div>
+
+<aside class="notes">
+
+</aside>
+
+
+
+</section>
+        </div>
+        </div>
+
+        <script src="js/reveal.js"></script>
+
+        <script>
+            // More info about config & dependencies:
+            // - https://github.com/hakimel/reveal.js#configuration
+            // - https://github.com/hakimel/reveal.js#dependencies
+            Reveal.initialize({
+                math: {
+                    mathjax: 'https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.0/MathJax.js',
+                    config: 'TeX-AMS_HTML-full',  // See http://docs.mathjax.org/en/latest/config-files.html
+                    // tex2jax: {
+                    //     inlineMath: [['$', '$'], ['\(', '\)']],
+                    //     displayMath: [['$$', '$$'], ['\[', '\]']],
+                    //     processEscapes: true,
+                    //     processEnvironments: true,
+                    //     skipTags: ['script', 'noscript', 'style', 'textarea', 'code', 'pre'],
+                    //     displayAlign: 'center',
+                    // }                
+                },
+                dependencies: [
+                    { src: 'plugin/markdown/marked.js' },
+                    { src: 'plugin/markdown/markdown.js' },
+                    { src: 'plugin/notes/notes.js', async: true },
+                    { src: 'plugin/highlight/highlight.js', async: true, callback: function() { hljs.initHighlightingOnLoad(); } },
+                    { src: 'plugin/math/math.js', async: true }
+                ]
+            });
+        </script>
+
+        <script>
+            <!-- Assets -->
+var assets = {
+"robbi" : new JBImage( "robbi", "12677", "162", "138", null, null, "assets/images/robbi", "png" ),
+"logo" : new JBImage( "logo", "12033", "0", "0", null, null, "assets/images/logo", "png" ),
+"fira-logo-1" : new JBImage( "fira-logo-1", "93836", "0", "0", null, null, "assets/images/FIRA-logo-1", "png" ),
+"pairLogo" : new JBImage( "pairLogo", "63051", "0", "0", null, null, "assets/images/pairLogo", "png" ) 
+};
+var assetInstances = {
+    "id-f70e1cdd-b7ed-4f1a-9022-f3e1103b6275": assets["robbi"],
+    "id-eb89503c-53fc-4ec8-9e9d-f84f7a36d58a": assets["robbi"],
+    "id-34c4dd7d-b090-4da8-bd8c-e6e498ceac79": assets["robbi"],
+    "id-2a5925d5-fba3-416c-8225-09f90c93cbf2": assets["robbi"],
+    "id-8fe64370-cbb5-443d-a9ee-1bdbf55d6d48": assets["robbi"],
+    "id-7038d4ee-033e-4589-a011-24b1e231042c": assets["robbi"],
+    "id-5f043a35-e8d0-42f0-b9b7-cbdfda18dacf": assets["robbi"],
+    "id-be6ba7a7-ccdd-44ff-9f88-51824da0aa51": assets["robbi"],
+    "id-8c95f5e4-c460-48dd-8ed6-65a71f1f01d6": assets["robbi"],
+    "id-b8fdd8a0-d5ce-4313-abe4-6ba709ac61c8": assets["robbi"],
+    "id-05d836ea-5b76-499d-8dfc-4c663d1cfc80": assets["robbi"],
+    "id-c3ad04a4-ce4b-4037-8024-ca828dc3ef75": assets["robbi"],
+    "id-512dabfa-68a2-4ab2-9726-37679509c2d1": assets["robbi"],
+    "id-9664bd87-3880-45e1-a0aa-fe36d40a0be5": assets["robbi"],
+    "id-0a82ab06-59c3-4a5f-8f4f-2c3fd520fdf6": assets["robbi"],
+    "id-3f8f42ab-f907-4c73-88c2-79ae443c777a": assets["robbi"],
+    "id-e6c46ced-8277-4eab-a6e5-816bc5519c05": assets["robbi"],
+    "id-1c2bca18-4259-411e-9346-e9e5194368ef": assets["logo"],
+    "id-62329013-fcf5-4d23-bf1f-22adf87663ce": assets["logo"],
+    "id-e915c85b-2eb7-4292-9f49-7f0008ecc7ff": assets["logo"],
+    "id-f78fb38f-5bba-465c-b4fe-3d61b5673c69": assets["logo"],
+    "id-c66dccd6-2f90-4d0e-91bf-420792522ce4": assets["logo"],
+    "id-80348d12-4251-4068-ba51-29eca98c7c29": assets["logo"],
+    "id-e610ac9d-0358-4151-a66a-da535daf8f87": assets["logo"],
+    "id-541b0254-3d70-447f-97df-4a2a14cced55": assets["logo"],
+    "id-7c99cfcd-1a91-4bc9-8794-7913cbe4f513": assets["logo"],
+    "id-6d722386-3e02-4d61-84bf-2d8925688416": assets["logo"],
+    "id-1033adbe-b48d-4326-9ebc-9fff86838c7e": assets["logo"],
+    "id-637c46af-53c6-437d-bf27-9b6beebc089f": assets["logo"],
+    "id-acf9cce9-1789-4006-85d2-6b5f691eeb0e": assets["logo"],
+    "id-e77d25bc-dc7a-4c3f-a7c1-84fa61b247e8": assets["logo"],
+    "id-df7cadf6-ac0f-45bc-9322-f1e773206bf7": assets["logo"],
+    "id-d7ad40ac-fc13-4692-90ac-a1679674515b": assets["logo"],
+    "id-9f399814-4673-4f75-b372-8f5d327204f2": assets["logo"]
+};
+<!-- End of Assets -->
+
+            convertURLs(assetInstances, "smart-path");
+        </script>
+        <script>
+            <!-- Characters -->
+var characters =
+{};
+<!-- End of Characters -->
+
+        </script>
+    </body>
+</html>
